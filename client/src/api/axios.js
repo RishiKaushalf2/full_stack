@@ -1,6 +1,6 @@
 import axios from 'axios'
 const API = axios.create({
-    baseURL: "http://localhost:5001/api"
+    baseURL: "https://full-stack-8xym.onrender.com/api"
 })
 API.interceptors.request.use((req) => {
     const token = localStorage.getItem("token")
